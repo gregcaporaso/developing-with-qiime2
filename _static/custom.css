@@ -49,6 +49,19 @@ html {
     --pst-sidebar-font-size: 1rem;
 }
 
-dl.py {
+html[data-theme="light"] {
+    /* Use shade 200 instead of 300 on light-mode*/
+    --pst-color-table-row-hover-bg: #d5b4fd;
+}
+
+
+dl[class]:not(.option-list, .field-list, .footnote, .glossary, .simple) {
     margin-bottom: 3rem;
+}
+
+dl[class]:not(.option-list, .field-list, .footnote, .glossary, .simple) > dd {
+  border-left: 1px solid var(--pst-color-border);;
+  padding-left: 1.7rem;
+  margin-left: 0.25rem;
+  margin-bottom: 3rem;
 }
